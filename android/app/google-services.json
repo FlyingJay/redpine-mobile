@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "476897098691",
+    "firebase_url": "https://famous-team-137322.firebaseio.com",
+    "project_id": "famous-team-137322",
+    "storage_bucket": "famous-team-137322.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476897098691:android:274d03e570cd4a49",
+        "android_client_info": {
+          "package_name": "com.redpinemusic.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-z1bR3wH76sCxGhIiKamPiECVMakaNlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476897098691-k034ghptki1lah3d40f0rt2e4no6emcs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "476897098691-6bvv505op82geuq4cpfrk0pt94o7br6j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.redpinemusic.RedPineMusic"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

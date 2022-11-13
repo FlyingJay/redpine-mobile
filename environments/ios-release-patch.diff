@@ -1,0 +1,60 @@
+diff --git a/ios/redpine.xcodeproj/project.pbxproj b/ios/redpine.xcodeproj/project.pbxproj
+index 611304f..e705b1c 100644
+--- a/ios/redpine.xcodeproj/project.pbxproj
++++ b/ios/redpine.xcodeproj/project.pbxproj
+@@ -8,16 +8,10 @@
+ 
+ /* Begin PBXBuildFile section */
+ 		0013CF112256BF4900B565C0 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
+-		0013CF302256CA6000B565C0 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
+-		0013CF5D2256CAF400B565C0 /* libRCTPushNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0013CF5A2256CADB00B565C0 /* libRCTPushNotification.a */; };
+-		0013CF5E2256CB7500B565C0 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
+-		0013CF5F2256CB8700B565C0 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+-		0013CF602256CB8E00B565C0 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
+-		0013CF612256CB9A00B565C0 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+-		0013CF622256CBA500B565C0 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
+ 		0013CF9B2257B5AC00B565C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0013CF712257B5AB00B565C0 /* GoogleService-Info.plist */; };
+ 		0013CFE82257B73A00B565C0 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0013CFE72257B73A00B565C0 /* UserNotifications.framework */; };
+ 		0013CFE92257B74000B565C0 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0013CFE62257B71100B565C0 /* libRNFirebase.a */; };
++		0051256122593E5700EBF822 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 0051256022593E5600EBF822 /* assets */; };
+ 		00AC256C22331EC900B0908C /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
+ 		00CB26D42256A3F80056497A /* env.json in Resources */ = {isa = PBXBuildFile; fileRef = 00CB26AC2256A3F80056497A /* env.json */; };
+ 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+@@ -335,6 +329,7 @@
+ 		0013CF712257B5AB00B565C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+ 		0013CFB82257B71100B565C0 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
+ 		0013CFE72257B73A00B565C0 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
++		0051256022593E5600EBF822 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+ 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+ 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
+ 		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "../node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
+@@ -379,13 +374,6 @@
+ 			files = (
+ 				0013CFE92257B74000B565C0 /* libRNFirebase.a in Frameworks */,
+ 				0013CFE82257B73A00B565C0 /* UserNotifications.framework in Frameworks */,
+-				0013CF622256CBA500B565C0 /* libRCTActionSheet.a in Frameworks */,
+-				0013CF612256CB9A00B565C0 /* libRCTAnimation.a in Frameworks */,
+-				0013CF602256CB8E00B565C0 /* libRCTNetwork.a in Frameworks */,
+-				0013CF5F2256CB8700B565C0 /* libRCTText.a in Frameworks */,
+-				0013CF5E2256CB7500B565C0 /* libRCTImage.a in Frameworks */,
+-				0013CF5D2256CAF400B565C0 /* libRCTPushNotification.a in Frameworks */,
+-				0013CF302256CA6000B565C0 /* libRCTWebSocket.a in Frameworks */,
+ 				0013CF112256BF4900B565C0 /* libRCTLinking.a in Frameworks */,
+ 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
+ 				39D0750A6AB448CA9435D51B /* libRNGestureHandler.a in Frameworks */,
+@@ -519,6 +507,7 @@
+ 		13B07FAE1A68108700A75B9A /* redpine */ = {
+ 			isa = PBXGroup;
+ 			children = (
++				0051256022593E5600EBF822 /* assets */,
+ 				0013CF712257B5AB00B565C0 /* GoogleService-Info.plist */,
+ 				0013CF102256B60E00B565C0 /* redpine.entitlements */,
+ 				00CB26AC2256A3F80056497A /* env.json */,
+@@ -1090,6 +1079,7 @@
+ 				00AC256C22331EC900B0908C /* main.jsbundle in Resources */,
+ 				00CB26D42256A3F80056497A /* env.json in Resources */,
+ 				0013CF9B2257B5AC00B565C0 /* GoogleService-Info.plist in Resources */,
++				0051256122593E5700EBF822 /* assets in Resources */,
+ 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+ 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+ 			);
